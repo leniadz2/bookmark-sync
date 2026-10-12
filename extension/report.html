@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reporte de importación - Bookmark Sync</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 24px; color: #1e293b; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #f1f5f9; padding: 16px; border-radius: 8px; }
+    button { padding: 10px 14px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Reporte de importación</h2>
+  <button id="download" disabled>Descargar import-errors.txt</button>
+  <p id="status" role="status">Cargando reporte...</p>
+  <pre id="content"></pre>
+  <script src="report.js"></script>
+</body>
+</html>

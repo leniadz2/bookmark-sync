@@ -1,0 +1,34 @@
+# Datos privados
+/data/
+**/bookmarks.json
+**/*bookmarks*backup*.json
+
+# Credenciales
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python y compilación
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.spec
+*.exe
+
+# Temporales
+*.log
+*.tmp
+*.bak
+*.backup
+
+# Editor
+.vscode/
+.idea/
+
+/native/native_host.json

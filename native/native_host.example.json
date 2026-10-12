@@ -1,0 +1,10 @@
+
+{
+    "name": "com.bookmark_sync.native_host",
+    "description": "Bookmark Sync Native Host",
+    "path": "C:\\RUTA\\AL\\PROYECTO\\native\\dist\\bookmark_host.exe",
+    "type": "stdio",
+    "allowed_origins": [
+      "chrome-extension://REEMPLAZAR_CON_ID_DE_EXTENSION/"
+    ]
+  }

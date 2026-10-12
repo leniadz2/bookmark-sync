@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bookmark Sync</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 16px;
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+
+    h3 { margin: 0 0 12px; }
+
+    select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    select { border: 1px solid #cbd5e1; }
+
+    button {
+      border: none;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: wait;
+    }
+
+    #roleIcon {
+      width: 48px;
+      height: 48px;
+      display: block;
+      margin: 12px auto;
+    }
+
+    #reportLink { display: none; margin-top: 10px; font-size: 13px; }
+    #reportLink a { color: #1d4ed8; cursor: pointer; text-decoration: underline; }
+
+    #status {
+      margin-top: 12px;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+<body>
+  <h3>Bookmark Sync</h3>
+
+  <img id="roleIcon" alt="Rol del navegador">
+
+  <label for="role">Perfil del navegador</label>
+  <select id="role">
+    <option value="">Seleccionar perfil</option>
+    <option value="publisher">Publisher - Origen</option>
+    <option value="subscriber">Subscriber - Réplica</option>
+  </select>
+
+  <button id="execute" disabled>Seleccionar perfil</button>
+
+  <div id="status" role="status"></div>
+  <div id="reportLink"><a href="report.html" target="_blank">Ver reporte de importación (TXT)</a></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
